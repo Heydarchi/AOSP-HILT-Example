@@ -5,8 +5,8 @@ import android.util.Log
 import dagger.hilt.android.HiltAndroidApp
 
 
-@HiltAndroidApp
-class DummyHiltApp : Application() {
+@HiltAndroidApp(Application::class)
+class DummyHiltApp : Hilt_DummyHiltApp() {
 
     override fun onCreate() {
         super.onCreate() // Injection happens in super.onCreate()
